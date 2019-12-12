@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edit_text_nis"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:hint="NIK"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/buttonText"
+        android:textColorHint="@color/textHint"
+        app:backgroundTint="@color/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_nama"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:hint="Nama"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="@color/buttonText"
+        android:textColorHint="@color/textHint"
+        app:backgroundTint="@color/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_nis" />
+
+    <EditText
+        android:id="@+id/edit_text_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Alamat"
+        android:paddingStart="10dp"
+        android:textColor="@color/buttonText"
+        android:textColorHint="@color/textHint"
+        app:backgroundTint="@color/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_nama" />
+
+    <EditText
+        android:id="@+id/edit_text_handphone"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Handphone"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/buttonText"
+        android:textColorHint="@color/textHint"
+        app:backgroundTint="@color/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_alamat" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/buttonPrimaryTheme"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="onSubmit"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_handphone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
